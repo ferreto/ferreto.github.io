@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.h2 {
+  flex: 0 0 100%;
+  color: rgb(1, 87, 112);
+  letter-spacing: 0.3px;
+  line-height: 30px;
+  margin: 120px 0 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+
+.h3 {
+  flex: 0 0 100%;
+  color: rgb(1, 87, 112);
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin: 100px 0 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+}
+
+.h4 {
+  flex: 0 1 auto;
+  font-size: 26px;
+  color: rgb(1, 87, 112);
+  text-align: center;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin: 36px 0 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+  transition-duration: 0.5s;
+}
+
+.h5 {
+  color: rgb(1, 87, 112);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  line-height: 26px;
+  margin: 24px 0 16px;
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.h6 {
+  color: rgb(1, 87, 112);
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  margin: 12px 0 8px;
+  text-align: left;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 576px) {
+  .h2 {
+    margin: 60px 0 20px;
+  }
+
+  .h3 {
+    margin: 60px 0 10px;
+  }
+}

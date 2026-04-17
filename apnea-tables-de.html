@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APNOE TABELLEN</title>
+    <link rel="icon" href="images/logos/logo-apnea-tables.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style-header.css" />
+    <link rel="stylesheet" href="styles/style-app.css" />
+    <link rel="stylesheet" href="styles/style-h2-h3-h4-h5-h6.css" />
+    <link rel="stylesheet" href="styles/style-footer.css" />
+    <script
+      src="https://kit.fontawesome.com/7ce87f3aaa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header" id="navbar">
+        <div class="logo__container">
+          <div class="logo">
+            <div class="logo__icon">
+              <a href="index.html"
+                ><img
+                  src="images/logos/OR.png"
+                  alt="logo"
+                  width="100%"
+                  height="100%"
+              /></a>
+            </div>
+            <h1 class="logo__title">APNEA APPS</h1>
+          </div>
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger"></label>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="main-de.html#home-de">Startseite</a></li>
+              <li><a href="main-de.html#apps-de">Unsere Apps</a></li>
+              <li><a href="main-de.html#about-de">Über uns</a></li>
+              <li><a href="main-de.html#contacts-de">Kontakte</a></li>
+              <li>
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >Kontakt aufnehmen</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="change-the-language-container">
+            <div class="change-the-language__icon">
+              <img
+                src="images/lng-icons/icon-languages.png"
+                alt="Change the language"
+              />
+            </div>
+            <select
+              class="change-the-language__button"
+              onchange="ChangeLng(this);"
+            >
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-de.html"
+                id="de"
+                value="de"
+              >
+                DE
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-en.html"
+                id="en"
+                value="en"
+              >
+                EN
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-fr.html"
+                id="fr"
+                value="fr"
+              >
+                FR
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-ru.html"
+                id="ru"
+                value="ru"
+              >
+                RU
+              </option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <div class="app__wrapper">
+        <main class="app__container">
+          <div class="app__carousel-container">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide mySlide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb1.png"
+                    class="d-block w-100"
+                    alt="Screenshot 1 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb2.png"
+                    class="d-block w-100"
+                    alt="Screenshot 2 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb3.png"
+                    class="d-block w-100"
+                    alt="Screenshot 3 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb4.png"
+                    class="d-block w-100"
+                    alt="Screenshot 4 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb5.png"
+                    class="d-block w-100"
+                    alt="Screenshot 5 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb6.png"
+                    class="d-block w-100"
+                    alt="Screenshot 6 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb7.png"
+                    class="d-block w-100"
+                    alt="Screenshot 7 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb8.png"
+                    class="d-block w-100"
+                    alt="Screenshot 8 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/de/370x800bb9.png"
+                    class="d-block w-100"
+                    alt="Screenshot 9 vom Apnoe Tabellen Trainer"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <article class="article">
+            <div class="app__icon-container">
+              <a
+                href="https://apps.apple.com/de/app/apnoe-tabellen-trainer/id1116159086"
+                target="_blank"
+              >
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/25/10/de/2510dea1-e5a2-0cd9-7db3-75349caf1139/AppIcon-1x_U007emarketing-0-10-0-85-220.png/217x0w.webp"
+                  alt="APNEA TABLES TRAINER icon"
+                />
+              </a>
+            </div>
+            <h2 class="h2">Über die App Apnoe Tabellen</h2>
+            <p class="app__text">
+              Mit dieser App schaffen Sie, gute Ergebnisse im Atemanhalten für
+              vier-fünf Minuten zu erzielen.
+            </p>
+            <p class="app__text">
+              Apnoe Tabellen&nbsp;&mdash; das ist eine App zwecks Apnoe-Training
+              in der Statik in der Luft (statische Apnoe) für Spearfishers und
+              Freedivers.
+            </p>
+            <p class="app__text">
+              Die Arbeit der App wird automatisch erfolgen. Um das Training zu
+              individualisieren, müssen Sie zuerst versuchen, maximal lange
+              Ihren Atem anzuhalten. Machen Sie am Anfang 3-4
+              Aufwärmungsversuche (etwa die&nbsp;Hälfte Ihres maximalen
+              Apnoe-Zeit-Ergebnisses). Dann halten Sie den Atem maximal lange an
+              und speichern Sie das Ergebnis Ihrer maximalen Verzögerung der
+              Atmung. Auf der Basis dieser maximalen Atmungsverzögerung werden
+              die Trainingstabellen (Tabelle&nbsp;CO2 und Tabelle&nbsp;O2)
+              automatisch berechnet.
+            </p>
+            <h5 class="h5">Über die Tabellen СO2 und O2</h5>
+            <p class="app__text">
+              Es gibt 2&nbsp;grundlegende Tabellen. Die Tabelle&nbsp;CO2 fördert
+              die Angewöhnung des Gehirns an einen hohen CO2-Spiegel, die
+              Tabelle&nbsp;O2 fördert die Angewöhnung des Gehirns an einen
+              niedrigen O2-Spiegel.
+            </p>
+            <p class="app__text">
+              Die Tabelle&nbsp;CO2 ist eine Serie von Atmungsverzögerungen in
+              der Statik mit der Abnahme der Ruhezeit bei konstanter Zeit des
+              Atemanhaltens.
+            </p>
+            <p class="app__text">
+              Die Tabelle&nbsp;O2 ist eine Serie von Atmungsverzögerungen in der
+              Statik mit der Zunahme der Atmungsverzögerungszeit bei konstanter
+              Ruhezeit.
+            </p>
+            <p class="app__text">
+              Die Tabelle&nbsp;CO2 ist für Anfänger geeignet, die
+              Tabelle&nbsp;O2&nbsp;&mdash; für Fortgeschrittene.
+            </p>
+            <h5 class="h5">"Dreieckiger" und "quadratischer" Atem</h5>
+            <p class="app__text">
+              Eine vollständige Beschreibung dieser Tabellen können Sie im Buch
+              "Techniken zur Atemapnoe" von Federico Mano finden. Das ständige
+              Training mit dieser Atemtechnik führt zur Aufbesserung der
+              zeitlichen Messwerte im Atemanhalten. Das Üben solchen Atems kann
+              von großem Vorteil sein, wenn er in der Erholungsphase zwischen
+              den Tauchgängen während eines Atemanhaltens verwendet wird.
+            </p>
+            <p class="app__text">Die Folgen solchen Atems:</p>
+            <ul class="app__text">
+              <li>Bradykardie;</li>
+              <li>Muskelentspannung;</li>
+              <li>Senkung des Blutdrucks;</li>
+              <li>Stimulation des Vagussystems;</li>
+              <li>allgemeine Entspannung usw.</li>
+            </ul>
+            <p class="app__text">
+              Wenn es für Sie schwierig ist, sofort mit dem Üben an den CO2- und
+              O2-Tabellen zu beginnen, empfehlen wir Ihnen, vor dem Beginn des
+              Trainings 10–15 Minuten lang an den Tabellen des "dreieckigen" und
+              "quadratischen" Atems zu üben.
+            </p>
+            <p class="app__text">
+              Diese Tabellen basieren auf dem klassischen Yoga-Pranayama
+              Anuloma-Vilom mit dem Unterschied darin, dass die Dauer der
+              Einatmung, der Ausatmung und des Atemanhaltens im Rahmen eines
+              einzelnen Trainings schrittweise zunimmt.
+            </p>
+            <p class="app__text">
+              Wenn Sie sich für klassisches Pranayama interessieren, können Sie
+              unsere App „Pranayama Atmung Yoga Timer“ im AppStore
+              herunterladen.
+            </p>
+            <h5 class="h5">Apnea Walking</h5>
+            <p class="app__text">
+              Dieser Modus wurde erst kürzlich auf Wunsch eines unserer Benutzer
+              hinzugefügt - eines deutschen Freitauchers (Siro, danke für die
+              Hilfe bei der Implementierung dieses Modus), der erzählte, dass er
+              auf diese Weise in der Freitauchschule trainiert hat:
+            </p>
+            <p class="app__text">
+              «Ich hatte vor zwei Wochen ein Statik Seminar, da wurde die
+              Methode 1min Einatmen / 1min Luftanhalten mit schnellen gehen /
+              dann wieder 1min Atmen vorgestellt das Ganze über 45min.»
+            </p>
+            <p class="app__text">
+              Die Quintessenz ist, dass ein zügiges Gehen beim Atemanhalten das
+              Tauchen in Flossen simuliert. Zwei Sekunden Apnoe bei schnellem
+              Gehen entsprechen ungefähr dem Tauchen in Flossen auf 1 Meter. So
+              trainiert man auf diese Weise: eine Minute zum Atmen, dann eine
+              Minute zum schnellen Gehen beim Atemanhalten, dann eine weitere
+              Minute zum Atmen usw. und das alles dauert 45 Minuten.
+            </p>
+            <p class="app__text">
+              In unserer App können Sie die Apnoezeit, die Atemzeit und die
+              Anzahl der Wiederholungen für dieses Training individuell
+              anpassen.
+            </p>
+            <h5 class="h5">Sicherheit</h5>
+            <div class="attention-note">
+              <p class="app__text attention-note_title">ACHTUNG!</p>
+              <p class="app__text">
+                Die Atemanhalten-Übungen können Ihre Gesundheit gefährden. Die
+                nicht richtigen Atemanhalten-Übungen können zu einem
+                Bewusstseinsverlust und Tod führen.
+              </p>
+              <p class="app__text">
+                Fragen Sie vor Beginn des Trainings Ihren Arzt, ob
+                Kontraindikationen vorhanden sind. Jeder, der Apnoe-Training
+                pflegt, sollte sich regelmäßig körperlich untersuchen lassen,
+                wobei besonderes Augenmerk auf Herz-Kreislauf-System und
+                Beeinträchtigung der Atmung gerichtet werden sollte.
+              </p>
+              <p class="app__text">
+                Sie trainieren sich auf eigene Gefahr. Trainieren Sie sich unter
+                Aufsicht eines erfahrenen Trainers oder Partners.
+              </p>
+              <p class="app__text">
+                Wenn Sie sich während des Trainings unwohl fühlen, hören Sie
+                SOFORT mit den Atemübungen auf.
+              </p>
+              <p class="app__text">
+                Die dynamische Apnea ist VERBOTEN und die körperliche
+                Anstrengung wird innerhalb einiger Stunden nach dem Training
+                NICHT EMPFOHLEN.
+              </p>
+              <p class="app__text">
+                Das Training nach verschiedenen Tabellen an einem Tag ist NICHT
+                ZU EMPFEHLEN. Dies ist eine übermäßige Belastung, da der Körper
+                eine Erholungsphase braucht, um wieder in einen normalen Zustand
+                zu kommen.
+              </p>
+              <p class="app__text">
+                MAN DARF NICHT ein paar maximale Verzögerungen der Atmung
+                hintereinander machen, da dies zu einem Bewusstseinsverlust
+                führen kann.
+              </p>
+              <p class="app__text">
+                Die App ist für das Training der Minderjährigen NICHT GEEIGNET.
+              </p>
+              <p class="app__text">
+                Die App ist für das Training im Wasser NICHT GEEIGNET.
+              </p>
+            </div>
+            <h5 class="h5">Empfehlungen</h5>
+            <p class="app__text">
+              Vor Beginn des Trainings senken Sie für etwa 15 Sekunden das
+              Gesicht ins kalte Wasser. Wischen Sie es nicht ab. Dadurch wird
+              Ihr Tauchreflex der Säugetieren aktiviert. Sie können eine
+              Tauchermaske aufsetzen, um den realen Bedingungen näher zu sein.
+            </p>
+            <p class="app__text">
+              Die Atemanhalten-Übungen sollte man auf nüchternen Magen machen,
+              nicht früher als in 4 Stunden nach der letzten Mahlzeit.
+            </p>
+            <p class="app__text">
+              Lehnen Sie sich zurück. Schalten Sie das Handy, den Fernseher, den
+              Computer und andere Geräte aus, die Sie stören können. Bitten Sie
+              Ihre Familienangehörigen, Sie bis zum Ende des Trainings nicht
+              abzulenken.
+            </p>
+            <p class="app__text">
+              Vor Beginn des Trainings entspannen Sie alle Muskeln, atmen Sie
+              ein paar Minuten lang tief und ruhig. Versuchen Sie Wärme und
+              Schwere im Körper zu spüren. Entspannen Sie sich, wenden Sie Ihren
+              Sinn ab. Konzentrieren Sie sich auf den Atmungsrhythmus.
+            </p>
+            <div class="app__postscriptum">
+              <p class="app__text">
+                <strong>P. S.</strong> Wenn Sie möchten, dass die App eine
+                andere Sprache benutzt, oder wenn Sie möchten die aktuelle
+                Übersetzung korrigieren, wenn Sie Kritik oder Wünsche für
+                zukünftige Versionen der App haben, schreiben Sie bitte an den
+                Autor:
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >ipictureprint@gmail.com</a
+                >
+              </p>
+              <p class="app__text">
+                Wenn diese App Ihnen gefällt und Sie möchten, dass sie weiter
+                entwickelt wird, vergessen Sie bitte nicht, eine positive
+                Bewertung im
+                <a
+                  href="https://apps.apple.com/de/app/apnoe-tabellen-trainer/id1116159086"
+                  target="_blank"
+                  >App Store</a
+                >
+                abzugeben &#9786; Danke!
+              </p>
+              <p class="app__text">
+                Wir empfehlen auch unsere Apps im App Store
+                <a
+                  href="https://apps.apple.com/de/app/pranayama-breathing-yoga-timer/id1268297941"
+                  target="_blank"
+                  ><strong>Pranayama Atmung Yoga Timer</strong></a
+                >
+                und
+                <a
+                  href="https://apps.apple.com/de/app/evoparameter-workout-diary/id1504206913"
+                  target="_blank"
+                  ><strong>EvoParameter Trainingstagebuch</strong></a
+                >.
+              </p>
+            </div>
+          </article>
+          <div class="reviews__wrapper">
+            <h3 class="h3">Rezensionen</h3>
+            <div class="reviews__container">
+              <div class="review__box">
+                <p class="review__date">Sep 23, 2018</p>
+                <p class="review__author">by <span>mfrito</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Cool app. Like the ability to customize via “test” feature as
+                  o2 and co2 capabilities fluctuate.
+                </p>
+              </div>
+              <div class="review__box">
+                <p class="review__date">Nov 15, 2018</p>
+                <p class="review__author">by <span>CFLSabs</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  I like this app, I feel like my breath holds are increasing
+                  every day I try it.
+                </p>
+              </div>
+              <div class="review__box">
+                <p class="review__date">Aug 13, 2019</p>
+                <p class="review__author">by <span>wol4ever</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">The app is really cool.</p>
+              </div>
+              <div class="review__box">
+                <p class="review__date">Mar 8, 2023</p>
+                <p class="review__author">by <span>WladKl</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">Gefällt mir.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content_copyright">
+            Copyright &copy; Aleh Rabchuk 2024 Alle Rechte vorbehalten
+            &VerticalLine; Diese Website wurde mit
+            <i class="fa-solid fa-heart"></i> von
+            <a href="mailto:lapuschinskaja@mail.ru">Natallya Lapushynskaya</a>
+            erstellt
+          </div>
+          <div class="footer__content_privacy">
+            <a href="privacy-de.html">DATENSCHUTZ&shy;ERKLÄRUNG</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

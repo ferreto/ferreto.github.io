@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVOPARAMETER &mdash; WORKOUT DIARY</title>
+    <link rel="icon" href="images/logos/logo-evoparameter.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style-header.css" />
+    <link rel="stylesheet" href="styles/style-app.css" />
+    <link rel="stylesheet" href="styles/style-h2-h3-h4-h5-h6.css" />
+    <link rel="stylesheet" href="styles/style-footer.css" />
+    <script
+      src="https://kit.fontawesome.com/7ce87f3aaa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header" id="navbar">
+        <div class="logo__container">
+          <div class="logo">
+            <div class="logo__icon">
+              <a href="index.html"
+                ><img
+                  src="images/logos/OR.png"
+                  alt="logo"
+                  width="100%"
+                  height="100%"
+              /></a>
+            </div>
+            <h1 class="logo__title">APNEA APPS</h1>
+          </div>
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger"></label>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="main-fr.html#home-fr">Page d'accueil</a></li>
+              <li><a href="main-fr.html#apps-fr">Nos apps</a></li>
+              <li><a href="main-fr.html#about-fr">À propos de nous</a></li>
+              <li><a href="main-fr.html#contacts-fr">Contacts</a></li>
+              <li>
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >Contactez-nous</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="change-the-language-container">
+            <div class="change-the-language__icon">
+              <img
+                src="images/lng-icons/icon-languages.png"
+                alt="Change the language"
+              />
+            </div>
+            <select
+              class="change-the-language__button"
+              onchange="ChangeLng(this);"
+            >
+              <option
+                class="change-the-language_select"
+                data-link="evoparameter-fr.html"
+                id="fr"
+                value="fr"
+              >
+                FR
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="evoparameter-en.html"
+                id="en"
+                value="en"
+              >
+                EN
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="evoparameter-de.html"
+                id="de"
+                value="de"
+              >
+                DE
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="evoparameter-ru.html"
+                id="ru"
+                value="ru"
+              >
+                RU
+              </option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <div class="app__wrapper">
+        <main class="app__container">
+          <div class="app__carousel-container">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide mySlide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb1.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 1 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb2.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 2 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb3.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 3 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb4.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 4 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb5.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 5 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb6.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 6 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/EVOparameter-screenshots/en/370x800bb7.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 7 des EvoParameter &mdash; Workout Diary"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <article class="article">
+            <div class="app__icon-container">
+              <a
+                href="https://apps.apple.com/fr/app/evoparameter-workout-diary/id1504206913"
+                target="_blank"
+              >
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/4f/3b/09/4f3b0941-aa0e-3f87-1d74-72fd9b5e2df4/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.webp"
+                  alt="EVOPARAMETER - WORKOUT DIARY icon"
+                />
+              </a>
+            </div>
+            <h2 class="h2">
+              À propos de l'appli EVO&shy;parameter&nbsp;&mdash; Workout Diary
+            </h2>
+            <p class="app__text">
+              Conservez vos paramètres: poids, tension artérielle, durée du
+              sommeil, entraînement, cours de langues étrangères, etc., nombre
+              de serrages, pompes, etc., ainsi que tout autre.
+            </p>
+            <p class="app__text">
+              Visualisez vos données sous une forme tabulaire et graphique
+              pratique.
+            </p>
+            <p class="app__text">Analyser.</p>
+            <p class="app__text">Développez-vous.</p>
+            <p class="app__text">
+              Devenez meilleur &mdash; plus fort, plus rapide, plus intelligent!
+            </p>
+            <br />
+            <p class="app__text">
+              <strong>P. S.</strong> Si vous souhaitez que l'application parle
+              votre langue, ou améliorer la traduction, envoyez un email:
+              <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                >ipictureprint@gmail.com</a
+              >
+            </p>
+            <p class="app__text">
+              Si vous êtes satisfait de cette application et souhaitez la
+              développer davantage, n'oubliez pas de donner votre note positive
+              sur
+              <a
+                href="https://apps.apple.com/fr/app/evoparameter-workout-diary/id1504206913"
+                target="_blank"
+                ><strong>l'App Store</strong></a
+              >. &#9786; Merci!
+            </p>
+            <p class="app__text">
+              Nous recommandons nos applications dans l'App Store
+              <a
+                href="https://apps.apple.com/fr/app/apnea-tables-trainer/id1116159086"
+                target="_blank"
+                ><strong>Tables d'apnée</strong></a
+              >
+              et
+              <a
+                href="https://apps.apple.com/fr/app/pranayama-breathing-yoga-timer/id1268297941"
+                target="_blank"
+                ><strong>Pranayama Breathing Yoga Timer</strong></a
+              >.
+            </p>
+          </article>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content_copyright">
+            Copyright &copy; Aleh Rabchuk 2024 Tous droits réservés
+            &VerticalLine; Ce site Web est réalisé avec
+            <i class="fa-solid fa-heart"></i> par
+            <a href="mailto:lapuschinskaja@mail.ru">Natallya Lapushynskaya</a>
+          </div>
+          <div class="footer__content_privacy">
+            <a href="privacy-fr.html"
+              >POLITIQUE DE&nbsp;CONFI&shy;DEN&shy;TIALITÉ</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

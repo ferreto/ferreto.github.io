@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АПНОЭ ТАБЛИЦЫ</title>
+    <link rel="icon" href="images/logos/logo-apnea-tables.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style-header.css" />
+    <link rel="stylesheet" href="styles/style-app.css" />
+    <link rel="stylesheet" href="styles/style-h2-h3-h4-h5-h6.css" />
+    <link rel="stylesheet" href="styles/style-footer.css" />
+    <script
+      src="https://kit.fontawesome.com/7ce87f3aaa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header" id="navbar">
+        <div class="logo__container">
+          <div class="logo">
+            <div class="logo__icon">
+              <a href="index.html"
+                ><img
+                  src="images/logos/OR.png"
+                  alt="logo"
+                  width="100%"
+                  height="100%"
+              /></a>
+            </div>
+            <h1 class="logo__title">APNEA APPS</h1>
+          </div>
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger"></label>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="main-ru.html#home-ru">Главная</a></li>
+              <li><a href="main-ru.html#apps-ru">Наши приложения</a></li>
+              <li><a href="main-ru.html#about-ru">О нас</a></li>
+              <li><a href="main-ru.html#contacts-ru">Контакты</a></li>
+              <li>
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >Связаться с нами</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="change-the-language-container">
+            <div class="change-the-language__icon">
+              <img
+                src="images/lng-icons/icon-languages.png"
+                alt="Change the language"
+              />
+            </div>
+            <select
+              class="change-the-language__button"
+              onchange="ChangeLng(this);"
+            >
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-ru.html"
+                id="ru"
+                value="ru"
+              >
+                RU
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-en.html"
+                id="en"
+                value="en"
+              >
+                EN
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-de.html"
+                id="de"
+                value="de"
+              >
+                DE
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-fr.html"
+                id="fr"
+                value="fr"
+              >
+                FR
+              </option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <div class="app__wrapper">
+        <main class="app__container">
+          <div class="app__carousel-container">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide mySlide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb1.png"
+                    class="d-block w-100"
+                    alt="Скриншот 1 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb2.png"
+                    class="d-block w-100"
+                    alt="Скриншот 2 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb3.png"
+                    class="d-block w-100"
+                    alt="Скриншот 3 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb4.png"
+                    class="d-block w-100"
+                    alt="Скриншот 4 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb5.png"
+                    class="d-block w-100"
+                    alt="Скриншот 5 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb6.png"
+                    class="d-block w-100"
+                    alt="Скриншот 6 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb7.png"
+                    class="d-block w-100"
+                    alt="Скриншот 7 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb8.png"
+                    class="d-block w-100"
+                    alt="Скриншот 8 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/ru/370x800bb9.png"
+                    class="d-block w-100"
+                    alt="Скриншот 9 АПНОЭ ТАБЛИЦ"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <article class="article">
+            <div class="app__icon-container">
+              <a
+                href="https://apps.apple.com/ru/app/%D0%B0%D0%BF%D0%BD%D0%BE%D1%8D-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D1%82%D1%80%D0%B5%D0%BD%D0%B5%D1%80/id1116159086"
+                target="_blank"
+              >
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/25/10/de/2510dea1-e5a2-0cd9-7db3-75349caf1139/AppIcon-1x_U007emarketing-0-10-0-85-220.png/217x0w.webp"
+                  alt="APNEA TABLES TRAINER icon"
+                />
+              </a>
+            </div>
+            <h2 class="h2">О приложении Апноэ Таблицы</h2>
+            <p class="app__text">
+              Пользуясь этим приложением, Вы сможете достичь великолепных
+              результатов в задержке дыхания на четыре-пять&nbsp;минут.
+            </p>
+            <p class="app__text">
+              Апноэ Таблицы&nbsp;&mdash; приложение для тренировки задержки
+              дыхания в статике на воздухе (статического апноэ) для подводных
+              охотников и фридайверов.
+            </p>
+            <p class="app__text">
+              Работа приложения будет происходить автоматически. Для того, что
+              бы индивидуализировать тренировки, сначала необходимо сделать
+              попытку с максимальной задержкой. Для начала сделайте
+              3-4&nbsp;разогревочных попытки (примерно в половину времени от
+              своего максимального результата). Потом сделайте максимальную
+              задержку и сохраните результат Вашей максимальной задержки
+              дыхания. На основе этой максимальной задержки автоматически будут
+              рассчитаны таблицы тренировок (таблица&nbsp;CO2 и
+              таблица&nbsp;O2).
+            </p>
+            <h5 class="h5">О таблицах&nbsp;СO2 и&nbsp;O2</h5>
+            <p class="app__text">
+              Существуют 2&nbsp;базовых Таблицы. Таблица&nbsp;CO2 способствует
+              приучению мозга к высокому уровню углекислого газа,
+              таблица&nbsp;O2 способствует приучению мозга к низкому уровню
+              кислорода.
+            </p>
+            <p class="app__text">
+              Таблица&nbsp;CO2&nbsp;&mdash; это серия задержек в статике с
+              уменьшением времени отдыха при постоянном времени задержки.
+            </p>
+            <p class="app__text">
+              Таблица&nbsp;O2&nbsp;&mdash; это серия задержек в статике с
+              увеличением времени задержки при постоянном времени отдыха.
+            </p>
+            <p class="app__text">
+              Таблица&nbsp;CO2&nbsp;&mdash; для начинающих,
+              таблица&nbsp;O2&nbsp;&mdash; для более подготовленных людей.
+            </p>
+            <h5 class="h5">«Треугольное» и «Квадратное» дыхание</h5>
+            <p class="app__text">
+              Полное описание данных таблиц Вы можете найти в книге «Техники
+              дыхания апноэ» Федерико Мана. Постоянное занятие этой дыхательной
+              техникой приведёт к увеличению временных показателей в задержке
+              дыхания. Практика такого дыхания может принести большую пользу,
+              если оно будет использоваться на восстановительном этапе между
+              сеансами погружения на задержке дыхания.
+            </p>
+            <p class="app__text">Результаты такого дыхания:</p>
+            <ul class="app__text">
+              <li>брадикардия;</li>
+              <li>мышечное расслабление;</li>
+              <li>снижение артериального давления;</li>
+              <li>стимуляция вагусной системы;</li>
+              <li>общее расслабление и&nbsp;др.</li>
+            </ul>
+            <p class="app__text">
+              Если Вам сложно сразу начать заниматься по таблицам&nbsp;СО2
+              и&nbsp;О2, рекомендуем перед началом тренировки в качестве
+              разминки минут&nbsp;10-15 позаниматься по таблицам «Треугольного»
+              и/или «Квадратного» дыхания.
+            </p>
+            <p class="app__text">
+              Данные таблицы построены на основе классической йоговской пранаямы
+              Анулома-Вилома с отличием в том, что длина вдоха, выдоха и
+              задержки дыхания постепенно увеличивается в рамках одной
+              тренировки.
+            </p>
+            <p class="app__text">
+              Если же Вас интересует и классическая пранаяма, Вы можете скачать
+              наше приложение «Дыхание Йога Таймер» в AppStore.
+            </p>
+            <h5 class="h5">Apnea Walking</h5>
+            <p class="app__text">
+              Данный режим добавлен совершенно недавно по просьбе одного нашего
+              пользователя&nbsp;&mdash; немецкого фридайвера (Siro, спасибо за
+              помощь в реализации данного режима), который рассказал, что таким
+              образом они тренировались в школе фридайвинга:
+            </p>
+            <p class="app__text">
+              «Ich hatte vor zwei Wochen ein Statik Seminar da wurde die Methode
+              1min Einatmen/ 1min Luftanhalten mit schnellen gehen/ dann wieder
+              1min Atmen vorgestellt das Ganze über 45min.»
+            </p>
+            <p class="app__text">
+              Суть в том, что быстрая ходьба на задержке дыхания симулирует
+              погружение в ластах. Две секунды апноэ при быстрой ходьбе примерно
+              соответствует погружению в ластах на 1&nbsp;метр. И они
+              тренировались таким образом: одну минуту дышать, затем минуту
+              быстро идти с задержкой дыхания, затем снова минуту дышать
+              и&nbsp;т.&nbsp;д., и всё это длится 45&nbsp;минут.
+            </p>
+            <p class="app__text">
+              В нашем приложении вы можете подстроить под себя индивидуально
+              время апноэ, время дыхания и количество повторов в такой
+              тренировке.
+            </p>
+            <h5 class="h5">Безопасность</h5>
+            <div class="attention-note">
+              <p class="app__text attention-note_title">ВНИМАНИЕ!</p>
+              <p class="app__text">
+                Упражнения на задержку дыхания могут быть опасными для Вашего
+                здоровья. Неправильные упражнения на задержку дыхания могут
+                привести к потере сознания и гибели.
+              </p>
+              <p class="app__text">
+                Проконсультируйтесь с врачом перед началом тренировок на наличие
+                противопоказаний. Каждый, кто занимается тренировкой апноэ,
+                должен регулярно проходить медицинский осмотр, уделяя особенное
+                внимание сердечно-сосудистой системе и нарушениям дыхания.
+              </p>
+              <p class="app__text">
+                Вы тренируетесь на свой страх и риск. Проводите тренировки под
+                присмотром опытного тренера или напарника.
+              </p>
+              <p class="app__text">
+                Если Вы почувствовали недомогание во время
+                тренировки&nbsp;&mdash; НЕМЕДЛЕННО прекратите дыхательные
+                упражнения.
+              </p>
+              <p class="app__text">
+                ЗАПРЕЩЕНО динамическое апноэ и НЕ РЕКОМЕНДУЕТСЯ физическая
+                нагрузка в течение нескольких часов после тренировки.
+              </p>
+              <p class="app__text">
+                НЕ РЕКОМЕНДУЕТСЯ тренировка по разным таблицам в течение
+                1&nbsp;дня. Это является чрезмерной нагрузкой, так как для того,
+                чтобы организм пришел в норму, необходим восстановительный
+                период.
+              </p>
+              <p class="app__text">
+                ЗАПРЕЩЕНО делать несколько максимальных задержек дыхания подряд,
+                так как это может привести к потере сознания.
+              </p>
+              <p class="app__text">
+                Программа НЕ ПРЕДНАЗНАЧЕНА для тренировки несовершеннолетних.
+              </p>
+              <p class="app__text">
+                Программа НЕ ПРЕДНАЗНАЧЕНА для тренировок в воде.
+              </p>
+            </div>
+            <h5 class="h5">Рекомендации</h5>
+            <p class="app__text">
+              Перед началом тренировки опустите лицо в холодную воду примерно на
+              15&nbsp;секунд. Не вытирайте его. Это запустит Ваш нырятельный
+              рефлекс млекопитающих. Можно одеть маску, чтобы приблизить условия
+              к реальным.
+            </p>
+            <p class="app__text">
+              Упражнения по задержке дыхания рекомендуется выполнять на пустой
+              желудок, не раньше, чем через 4 часа после последнего приема пищи.
+            </p>
+            <p class="app__text">
+              Устройтесь поудобнее. Отключите звонки телефона, выключите
+              телевизор, компьютер и другие устройства, которые могут Вам
+              помешать. Попросите Ваших родных не отвлекать Вас до окончания
+              тренировок.
+            </p>
+            <p class="app__text">
+              Перед началом тренировок расслабьте все мышцы, глубоко и спокойно
+              дышите несколько минут. Постарайтесь почувствовать тепло и тяжесть
+              в&nbsp;теле. Расслабьтесь, ни о чём не думайте. Сосредоточьтесь на
+              ритме дыхания.
+            </p>
+            <h5 class="h5">ЧАВО (часто задаваемые вопросы)</h5>
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Добрый день! Подскажите пожалуйста. Не могу
+                разобраться как поступать на тренировках? Программа выбирает
+                режим тренировок которые мне не в силах на последних этапах
+                выполнять. Продолжать с нарушением циклов дыхания и задержек?
+                Закончить тренировку? или делать тестовые задержки не в полную
+                силу?</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Продолжайте с нарушением циклов, задерживайте дыхание
+              столько, сколько можете, потом просто дышите до начала следующей
+              задержки дыхания.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Ребята, сделайте поддержку Iwatch! Iwatch сейчас
+                подводные и можно прямо в бассейне заниматься.</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Поддержка AppleWatch добавлена, но, как мы уже
+              писали, ПРИЛОЖЕНИЕ НЕ ПРЕДНАЗНАЧЕНО для тренировке в воде. Это
+              очень опасно, и Вы тренируетесь на свой страх и риск. Очень не
+              хочется, чтобы кто-нибудь утонул в бассейне благодаря нашему
+              приложению! Кроме того, запуск и остановка тренировки всё равно
+              производится с айфона, приложения AppleWatch (кроме примитивных
+              стандартных) не могут работать без айфона. Функционал нашего
+              приложения для AppleWatch ограничивается только вибрациями в
+              нужный момент, и оно не заменит основного приложения.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;И историю тренировок было бы супер. Наглядный
+                календарь, когда выполнил тренировку, а когда замуфлонил.</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Информацию по тренировкам (дни и длительность) Вы
+              можете увидеть в стандартном приложении "Здоровье" (раздел
+              "Осознанность"). Там же можно построить увидеть графики тренировок
+              в наглядном виде. В самом приложении можно увидеть только историю
+              максимальных задержек дыхания.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Здравствуйте, если с таблицами&nbsp;СО2 и&nbsp;О2
+                более-менее понятно, то возник вопрос по таблицам дыхания: как
+                по ним тренироваться (о них в приложении совершенно никакой
+                информации),в какой последовательности их использовать,
+                настраиваются ли они по показателям макс задержки?</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Мы добавили описание раздела, смотрите выше, спасибо
+              за вопрос. &#9786; Данные таблицы не связаны со временем
+              максимальной задержки и настраиваются отдельно. Там в настройках
+              есть ползунок с регулировками в этих таблицах, если Вы новичок, не
+              трогайте его, по умолчанию всё настроено. Менять длительность
+              циклов нужно, если точно уверен, что это необходимо. Или если Вам
+              трудно заниматься по стандартным настройкам, можно для начала
+              уменьшить сложность.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Здравствуйте очень хорошая программа. А есть ли
+                такая для андроида и как она называется?</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;К сожалению, у нас нет (пока) приложения для андроида
+              &#9786;
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Приветствую. Пользуюсь вашим приложением, но есть
+                несколько вопросов. Вот, например, в разделе настроек у меня
+                стоит максимальное время задержки 4 минуты (скрин в приложении)
+                и сложность 70&nbsp;%, это, как я понимаю, тренировка должна
+                быть до 70&nbsp;% от максимума, то есть в моем случае это было
+                бы где-то 2:28 минуты на последней задержке. А у меня когда я
+                захожу в О2, последняя задержка составляет больше моего
+                максимума 4:33 (скрин тоже в приложении). Возможно, я как то не
+                правильно понял, буду рад за помощь.
+              </em>
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Если у Вас 4&nbsp;минуты задержки есть, то вам не
+              очень необходимо наше приложение, по крайней мере, автоматический
+              режим, нам так кажется. Приложение скорее для начинающих, а Вы и
+              так уже достигли хорошей задержки, Вам нужны какие-то свои
+              настройки. Свои таблицы Вы можете настроить в режиме «вручную»,
+              это есть и в&nbsp;О2 и в&nbsp;СО2. Там Вы можете добавлять и
+              удалять циклы, изменять время. Если вкладка «Вручную» активна,
+              далее в тренировках будет использоваться настроенная Вами таблица.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Здравствуйте. Меня зовут Артем. Есть такое
+                предложение.</em
+              >
+            </p>
+            <p class="app__text">
+              <em
+                >Добавьте, пожалуйста, технику дыхания перед задержкой, и
+                технику дыхания при выходе из задержки. Т.&nbsp;е. как дышать
+                перед тем как задерживать дыхание, насколько глубокие вдохи,
+                выдохи, и то же после того как задержка закончилась, чтобы
+                сознание не потерять))) Как дышать при отдыхе.</em
+              >
+            </p>
+            <p class="app__text">
+              <em
+                >Так же было бы круто если был бы набор каких то физических
+                упражнений, растяжек именно для результата, не на время и не по
+                таймеру а хотя бы простое описание или видео. Что бы так сказать
+                все работало в купе и физика и дыхалка.</em
+              >
+            </p>
+            <p class="app__text">
+              <em
+                >Например: ноги на ширине плеч, носки смотрят вперед, глубокий
+                вдох, задержка дыхания, руки прямые поднимаем вверх в замок за
+                голову, наклоны в лево в право.</em
+              >
+            </p>
+            <p class="app__text">
+              <em
+                >Возможно сделать какой то раздел по описанию правильного
+                выполнения техник. Чтобы можно было просто раз прочитать или
+                посмотреть видео, чтобы делать с умом, а не сломя голову
+                бездумно задерживать дыхание. Я совсем новенький и больше просто
+                по нырялке. Я видел у фридайверов после погружений, да и просто
+                после максимальной задержки из за потери контроля и не
+                правильного дыхания на всплытии потери сознания происходят. У
+                нас в Тюмени инструкторов не нашёл, кто бы объяснил и показал
+                как и что делать. Думал, может, у вас ответы есть)))
+              </em>
+            </p>
+            <p class="app__text">
+              <em
+                >А Приложение хорошее, но как говорится, Совершенству нет
+                придела. ))) Спасибо и всего хорошего.</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Вы правы: нет предела совершенству, и было бы неплохо
+              когда-нибудь всё это иметь в приложении, но пока как есть. &#9786;
+              Лубягин говорит, что после выныривания нужно дышать маленькими
+              порциями, постепенно увеличивая вдох. Но, на суше сознания никто
+              не теряет, Вы можете тренироваться смело. Фридайверы теряют
+              сознание не на суше, а после выныривания из глубины, это другое
+              дело, лёгкие резко расширяются, порционное давление кислорода
+              уменьшается, а кислорода и так было на грани, и мозг отключается.
+              Но при тренировке на суше такого не будет. Так что заниматься с
+              приложением относительно безопасно.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Не редактируется таблица&nbsp;о2! Как быть? СО2
+                все норм, меняю время задержки, меняется таблица! О2 сама по
+                себе!</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Должно быть у вас выбран ручной режим в
+              таблице&nbsp;О2. Поставьте на «авто».
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Добрый день! Подскажите порядок тренировки. Что
+                сначала делать, СО2, а потом одну из таблиц дыхания или
+                наоборот? Или один день СО2, а другой день таблицу дыхания?</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Лучше всего на ваш вопрос ответил
+              <a href="https://youtu.be/NXY9nJ6d3ek" target="_blank"
+                ><strong>Олег Гаврилин</strong></a
+              >.
+            </p>
+            <p class="app__text">
+              Он рекомендует тренировать 5-6&nbsp;дней СО2 и один день О2, а с
+              ним сложно спорить. В один день обе таблицы нельзя! Перед
+              тренировкой можете сделать разминку с помощью таблиц квадратного
+              дыхания. Если будете тренироваться регулярно, каждый день, через
+              пару месяцев ваша задержка увеличится примерно в два раза. Потом
+              прогресс будет не такой быстрый.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;Можно ли тренироваться рано утром в&nbsp;5.30.
+                Сразу после пробуждения? Так же не понял: во время тренировки
+                нужно дышать квадратно, треугольно или обычно?</em
+              >
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Почему же нельзя рано утром, мы ничего не слышали о
+              таких запретах. &#9786; Тренируйтесь утром, когда Вам удобно, 5-6
+              раз в неделю СО2 и один раз О2.
+            </p>
+            <p class="app__text">
+              По поводу дыхания, дышать обычно, но не совсем. Выдох должен быть
+              в полтора-два раза дольше вдоха, чтобы лёгкие успевали насытиться
+              кислородом. Проще всего это сделать через полусжатые губы.
+              Гипервентиляцию не делать!
+            </p>
+            <p class="app__text">
+              Непосредственно перед задержкой нужно сделать полный вдох начиная
+              от живота и заканчивая грудью или, лучше, пару-тройку таких
+              вдохов.
+            </p>
+            <p class="app__text">
+              Треугольное и квадратное дыхание не нужны во время тренировок по
+              таблицам СО2 и О2 и практикуются отдельно.
+            </p>
+            <br />
+            <p class="app__text">
+              <em
+                >&mdash;&nbsp;1.&nbsp;После того как я увеличил время задержки
+                по тесту, перерасчитались Таблицы тренировок. Тренировка
+                проходит по всем правилам, и я уже чувствую, что зона некомфорта
+                уже близко.
+              </em>
+            </p>
+            <p class="app__text">
+              <em
+                >Я могу показать и больший тест (уйти в некомфортную зону) , и
+                тренировки станут ещё сложнее, но нужно/можно ли это?
+              </em>
+            </p>
+            <p class="app__text">
+              <em
+                >2.&nbsp;Начал замечать что при тренировке CO2, Под конец дышать
+                хочется все больше, а когда на выдох-вдох 10 секунд. 5 сек
+                выдыхаю, и делаю 1 большой вдох с большим давлением на входе.
+                Как раз в эти моменты иногда появляется чувство что лицо или нос
+                вибрирует (пульсирует), иногда слабо или чуть сильнее.
+              </em>
+            </p>
+            <p class="app__text">
+              <em>Такое же ощущение, когда надул много воздушных шариков.</em>
+            </p>
+            <p class="app__text">
+              &mdash;&nbsp;Ненужно увеличивать макс задержку до потемнения в
+              глазах и потери сознания. &#9786; Прогресс в этом деле
+              постепенный. Организм постепенно привыкает к избытку СО2. Главное
+              &mdash; регулярность. Желательно каждый день заниматься.
+              Заниматься раз в месяц бесполезно.
+            </p>
+            <div class="app__postscriptum">
+              <p class="app__text">
+                <strong>P.&nbsp;S.</strong> Если Вы хотите, чтобы данное
+                приложение использовало другой язык, или хотите исправить
+                текущую локализацию, если у Вас есть критика или пожелания к
+                будущим версиям приложения, пожалуйста, пишите автору:
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >ipictureprint@gmail.com</a
+                >
+              </p>
+              <p class="app__text">
+                Если Вас устраивает это приложение и Вы хотите, чтобы оно
+                развивалось и дальше, не забудьте поставить положительную оценку
+                на странице
+                <a
+                  href="https://apps.apple.com/ru/app/%D0%B0%D0%BF%D0%BD%D0%BE%D1%8D-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D1%82%D1%80%D0%B5%D0%BD%D0%B5%D1%80/id1116159086"
+                  target="_blank"
+                  ><strong>App Store</strong></a
+                >. &#9786; Спасибо!
+              </p>
+              <p class="app__text">
+                Также рекомендуем наши приложения в App Store
+                <a
+                  href="https://apps.apple.com/ru/app/pranayama-breathing-yoga-timer/id1268297941"
+                  target="_blank"
+                  ><strong>Пранаяма Дыхание Йога Таймер</strong></a
+                >
+                и
+                <a
+                  href="https://apps.apple.com/ru/app/evoparameter-workout-diary/id1504206913"
+                  target="_blank"
+                  ><strong>EvoParameter&nbsp;&mdash; спорт дневник</strong></a
+                >.
+              </p>
+            </div>
+          </article>
+          <div class="reviews__wrapper">
+            <h3 class="h3">Отзывы</h3>
+            <div class="reviews__container">
+              <div class="review__box_ru">
+                <p class="review__date">Feb 10, 2017</p>
+                <p class="review__author">by <span>васякапсул</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Самое толковое приложение по этой теме из всех существующих.
+                  Всем рекомендую. Семь звёзд!
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Oct 26, 2018</p>
+                <p class="review__author">by <span>игорь губин</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Пользуясь программой увеличил время задержки дыхания до трёх
+                  минут. За пару месяцев к отпуску. Разработчик быстро и
+                  информативно отвечает на комментарии. Я доволен. Добавил
+                  возможность использовать часы, жаль я их утопил(.
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Jan 17, 2019</p>
+                <p class="review__author">by <span>аарртеммарртемм</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Приложение простое, понятное. Делаешь тест своей задержки и
+                  программа автоматически рассчитывает Таблицы под твоё время,
+                  не надо заморачиватся с расчетами, плюс голос ведёт отсчёт до
+                  конца упражнения. Тех потвердевший на связи, поэтому проблем
+                  нет.
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Apr 12, 2019</p>
+                <p class="review__author">by <span>itwnick</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Хорошая методика. Результаты не заставили себя ждать.
+                  Занимаюсь каждый день. Спасибо.
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">May 11, 2019</p>
+                <p class="review__author">by <span>KatyaBo</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Спасибо разработчику за это приложение! Отличная идея,
+                  приятный интерфейс, удобные настройки! Я не дайвер, но
+                  использую приложение для тренировки задержек дыхания на
+                  выдохе, способствующих ощелачиванию организма и общему
+                  оздоровлению, чего и всем желаю :) Автору успехов и
+                  продвижения!!!!
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Aug 12, 2020</p>
+                <p class="review__author">by <span>bryanski_volk</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Поразительно, но за 4 тренировки добавил задержку более 1
+                  минуты. Удобная прога.
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Sep 27, 2020</p>
+                <p class="review__author">by <span>Multi mama</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Главное постоянство. Незаметно, понемногу, но время задержки
+                  дыхания увеличивается.
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Mar 5, 2021</p>
+                <p class="review__author">by <span>Sergio Zador</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Замечательное приложение, позволяет постепенно, в режиме
+                  регулярных занятий, существенно увеличить возможности
+                  организма переносить гипоксию и заметно повысить уровень
+                  здоровья.
+                </p>
+              </div>
+              <div class="review__box_ru">
+                <p class="review__date">Nov 13, 2023</p>
+                <p class="review__author">by <span>Superbulka_</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Приложение просто бомба! Спасибо разработчикам!
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content_copyright">
+            Copyright &copy; Aleh Rabchuk 2024 Все права защищены &VerticalLine;
+            Этот сайт создан с
+            <i class="fa-solid fa-heart"></i>
+            <a href="mailto:lapuschinskaja@mail.ru">Натальей Лапушинской</a>
+          </div>
+          <div class="footer__content_privacy">
+            <a href="privacy-ru.html">ПОЛИТИКА КОНФИДЕН&shy;ЦИАЛЬНОСТИ</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

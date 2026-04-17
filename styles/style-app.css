@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body,
+.app__wrapper {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app__wrapper {
+  flex: 0 0 100%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 30px 4%;
+  background-image: linear-gradient(
+    180deg,
+    rgb(251, 241, 224),
+    rgb(225, 232, 254)
+  );
+}
+
+.app__container {
+  flex: 0 1 100%;
+  display: block;
+}
+
+.app__carousel-container {
+  float: left;
+  margin: 68px 5% 28px 0;
+  width: 370px;
+  height: 800px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.article {
+  margin: 0px;
+  padding: 0 0.5%;
+}
+
+.app__icon-container {
+  border: 1px solid transparent;
+  border-radius: 22.5%;
+  height: 217px;
+  margin: 68px auto 0;
+  overflow: hidden;
+  width: 217px;
+}
+
+.app__text,
+.review__date,
+.review__author,
+.review__text {
+  color: rgb(1, 87, 112);
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  line-height: 26px;
+  margin: 8px 0 8px;
+  padding: 4px 0 4px;
+  text-align: left;
+}
+
+.app__text li {
+  margin-left: 20px;
+}
+
+.important-note,
+.attention-note {
+  border: 3px dotted rgb(204, 0, 0);
+  padding: 8px;
+}
+
+.important-note_title,
+.attention-note_title {
+  background-color: rgb(250, 186, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+.app__postscriptum {
+  border: 3px dotted rgb(1, 87, 112);
+  margin-top: 24px;
+  padding: 0 8px;
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.review__box,
+.review__box_pranayama,
+.review__box_ru {
+  box-shadow: 1px 2px 12px rgb(1, 87, 112);
+  margin: 28px;
+  padding: 20px;
+  background-color: rgb(201, 237, 246);
+  transition: all 0.5s ease-in-out;
+}
+
+.review__box {
+  flex: 0 1 20%;
+}
+
+.review__box_pranayama,
+.review__box_ru {
+  flex: 0 1 29%;
+}
+
+.review__box:hover,
+.review__box_pranayama:hover,
+.review__box_ru:hover {
+  transform: scaleX(1.1);
+}
+
+.review__date {
+  font-size: 16px;
+  text-align: right;
+}
+
+.review__author span {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 16px 0 16px;
+}
+
+.review__accordion {
+  background-color: rgb(227, 244, 247);
+  color: #777;
+  cursor: pointer;
+  padding: 8px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 800;
+  transition: 0.4s;
+}
+
+.active,
+.review__accordion:hover {
+  background-color: rgb(251, 241, 224);
+}
+
+/* .review__accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+} */
+
+.reviewPanel {
+  padding: 0 18px;
+  background-color: rgb(227, 244, 247);
+  display: none;
+  overflow: hidden;
+}
+
+.star_orange {
+  color: rgb(255, 149, 0);
+  font-size: 22px;
+}
+
+.star_orange:first-of-type {
+  margin-left: 32px;
+}
+
+.list-without-dots {
+  list-style: none;
+  margin-left: -1.5%;
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .app__carousel-container {
+    width: 296px;
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app__carousel-container {
+    float: none;
+    margin: 48px auto;
+    width: 296px;
+    height: 640px;
+  }
+}

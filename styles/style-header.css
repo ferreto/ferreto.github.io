@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("fonts/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  opacity: 1;
+  background-color: rgb(198, 233, 240);
+  width: 100%;
+  box-shadow: 4px 4px 20px rgb(0, 175, 216);
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+  margin: 0;
+  padding: 12px 0 12px;
+}
+
+.logo {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 9;
+}
+
+.logo__icon {
+  flex: 0 0 53px;
+  height: 32px;
+  margin: 0 4px 0 12px;
+  padding: 0;
+}
+
+.logo__title {
+  flex: 1 0 228px;
+  color: rgb(1, 87, 112);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 9;
+}
+
+#hamburger,
+[for="hamburger"] {
+  display: none;
+}
+
+.header__menu {
+  flex: 0 1 auto;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu ul li {
+  display: inline;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 12px;
+  text-transform: uppercase;
+}
+
+a:link {
+  color: rgb(1, 87, 112);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(1, 106, 116);
+}
+
+a:hover {
+  text-shadow: 2px 2px 12px rgb(112, 126, 206);
+  color: rgb(49, 38, 165);
+}
+
+.change-the-language-container {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9;
+}
+
+.change-the-language__icon {
+  flex: 0 0 28px;
+  height: 28px;
+}
+
+.change-the-language__icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.change-the-language__button {
+  flex: 0 1 auto;
+  margin: 0 12px 0 8px;
+  padding: 2px 0;
+  border: 2px solid rgb(1, 87, 112);
+  border-radius: 10px;
+  color: rgb(1, 87, 112);
+  background-color: rgb(148, 218, 234);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.change-the-language__button:hover {
+  text-shadow: 2px 2px 12px rgb(112, 126, 206);
+  color: rgb(49, 38, 165);
+}
+
+@media screen and (min-width: 446px) and (max-width: 1162px) {
+  [for="hamburger"] {
+    display: block;
+    position: fixed;
+    width: 29.5px;
+    text-align: center;
+    right: 8px;
+    top: 10px;
+    color: rgb(1, 87, 112);
+    background-color: rgb(198, 233, 240);
+    padding: 0 4px 2px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  [for="hamburger"]:hover {
+    cursor: pointer;
+    color: rgb(49, 38, 165);
+    text-shadow: 2px 2px 12px rgb(112, 126, 206);
+  }
+
+  [for="hamburger"]::before {
+    content: "☰";
+  }
+
+  #hamburger:checked + [for="hamburger"]::before {
+    content: "⊗";
+  }
+
+  .header__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    padding: 68px 12px 12px;
+    background-color: rgb(198, 233, 240);
+    box-shadow: 4px 4px 20px rgb(0, 175, 216);
+    width: 100%;
+    z-index: 8;
+  }
+
+  .header__menu ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .header__menu ul li {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  #hamburger:checked + label + nav {
+    display: block;
+  }
+
+  .change-the-language__button {
+    margin: 0 51.5px 0 4px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 445px) {
+  .logo__icon {
+    display: none;
+  }
+
+  .logo__title {
+    margin-left: 8px;
+  }
+
+  [for="hamburger"] {
+    display: block;
+    position: fixed;
+    width: 29.5px;
+    text-align: center;
+    right: 4px;
+    top: 10px;
+    color: rgb(1, 87, 112);
+    background-color: rgb(198, 233, 240);
+    padding: 0 4px 2px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  [for="hamburger"]:hover {
+    cursor: pointer;
+    color: rgb(49, 38, 165);
+    text-shadow: 2px 2px 12px rgb(112, 126, 206);
+  }
+
+  [for="hamburger"]::before {
+    content: "☰";
+  }
+
+  #hamburger:checked + [for="hamburger"]::before {
+    content: "⊗";
+  }
+
+  .header__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    padding: 68px 12px 12px;
+    background-color: rgb(198, 233, 240);
+    box-shadow: 4px 4px 20px rgb(0, 175, 216);
+    width: 100%;
+    z-index: 8;
+  }
+
+  .header__menu ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .header__menu ul li {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .change-the-language__icon {
+    display: none;
+  }
+
+  .change-the-language__button {
+    margin: 0 42px 0 0;
+  }
+
+  #hamburger:checked + label + nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .logo__icon {
+    display: none;
+  }
+
+  .logo__title {
+    margin-left: 4px;
+  }
+
+  [for="hamburger"] {
+    display: block;
+    position: fixed;
+    width: 29.5px;
+    text-align: center;
+    right: 2px;
+    top: 10px;
+    color: rgb(1, 87, 112);
+    background-color: rgb(198, 233, 240);
+    padding: 0 4px 2px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  [for="hamburger"]:hover {
+    cursor: pointer;
+    color: rgb(49, 38, 165);
+    text-shadow: 2px 2px 12px rgb(112, 126, 206);
+  }
+
+  [for="hamburger"]::before {
+    content: "☰";
+  }
+
+  #hamburger:checked + [for="hamburger"]::before {
+    content: "⊗";
+  }
+
+  .header__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    padding: 68px 12px 12px;
+    background-color: rgb(198, 233, 240);
+    box-shadow: 4px 4px 20px rgb(0, 175, 216);
+    width: 100%;
+    z-index: 8;
+  }
+
+  .header__menu ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .header__menu ul li {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .change-the-language__icon {
+    display: none;
+  }
+
+  .change-the-language__button {
+    margin: 0 40px 0 0;
+  }
+
+  #hamburger:checked + label + nav {
+    display: block;
+  }
+}

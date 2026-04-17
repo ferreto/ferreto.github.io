@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APNEA TABLES</title>
+    <link rel="icon" href="images/logos/logo-apnea-tables.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style-header.css" />
+    <link rel="stylesheet" href="styles/style-app.css" />
+    <link rel="stylesheet" href="styles/style-h2-h3-h4-h5-h6.css" />
+    <link rel="stylesheet" href="styles/style-footer.css" />
+    <script
+      src="https://kit.fontawesome.com/7ce87f3aaa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header" id="navbar">
+        <div class="logo__container">
+          <div class="logo">
+            <div class="logo__icon">
+              <a href="index.html"
+                ><img
+                  src="images/logos/OR.png"
+                  alt="logo"
+                  width="100%"
+                  height="100%"
+              /></a>
+            </div>
+            <h1 class="logo__title">APNEA APPS</h1>
+          </div>
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger"></label>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="main-fr.html#home-fr">Page d'accueil</a></li>
+              <li><a href="main-fr.html#apps-fr">Nos apps</a></li>
+              <li><a href="main-fr.html#about-fr">À propos de nous</a></li>
+              <li><a href="main-fr.html#contacts-fr">Contacts</a></li>
+              <li>
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >Contactez-nous</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="change-the-language-container">
+            <div class="change-the-language__icon">
+              <img
+                src="images/lng-icons/icon-languages.png"
+                alt="Change the language"
+              />
+            </div>
+            <select
+              class="change-the-language__button"
+              onchange="ChangeLng(this);"
+            >
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-fr.html"
+                id="fr"
+                value="fr"
+              >
+                FR
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-en.html"
+                id="en"
+                value="en"
+              >
+                EN
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-de.html"
+                id="de"
+                value="de"
+              >
+                DE
+              </option>
+              <option
+                class="change-the-language_select"
+                data-link="apnea-tables-ru.html"
+                id="ru"
+                value="ru"
+              >
+                RU
+              </option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <div class="app__wrapper">
+        <main class="app__container">
+          <div class="app__carousel-container">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide mySlide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb1.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 1 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb2.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 2 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb3.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 3 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb4.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 4 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb5.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 5 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb6.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 6 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb7.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 7 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb8.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 8 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/apnea-tables-screenshots/fr/370x800bb9.png"
+                    class="d-block w-100"
+                    alt="Capture d'écran 9 des Tables d'apnée"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <article class="article">
+            <div class="app__icon-container">
+              <a
+                href="https://apps.apple.com/fr/app/tables-dapn%C3%A9e/id1116159086"
+                target="_blank"
+              >
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/25/10/de/2510dea1-e5a2-0cd9-7db3-75349caf1139/AppIcon-1x_U007emarketing-0-10-0-85-220.png/217x0w.webp"
+                  alt="APNEA TABLES TRAINER icon"
+                />
+              </a>
+            </div>
+            <h2 class="h2">A propos du programme Apnea Tables</h2>
+            <p class="app__text">
+              En&nbsp;utilisant ce programme, vous pouvez atteindre d'excellents
+              résultats en rétention de respiration sur une durée de 4 ou
+              5&nbsp;minutes.
+            </p>
+            <p class="app__text">
+              Apnea Tables est un programme d'entrainement pour l'apnée statique
+              destiné aux freedivers, et chasseurs sous-marins.
+            </p>
+            <p class="app__text">
+              Le programme travaille automatiquement afin d'individualiser
+              l'entrainement, vous commencez par définir votre niveau de départ
+              en réalisant une apnée maximum, et l'application va
+              automatiquement calculer les table&nbsp;CO2 et table&nbsp;O2.
+            </p>
+            <h5 class="h5">A propos des tables&nbsp;СO2 and O2</h5>
+            <p class="app__text">
+              Ce sont les 2 tables de base, la table&nbsp;CO2 aide à habituer le
+              cerveau à un niveau important de CO2 dans l'organisme, et la
+              table&nbsp;O2 aide à habituer le cerveau à un niveau réduit en O2
+              dans l'organisme.
+            </p>
+            <p class="app__text">
+              TLa table CO2 consiste en une série de retentions de respiration
+              statiques de durée égale (correspondant à 70% du maximum) avec un
+              temps de repos décroissant entre chaque série.
+            </p>
+            <p class="app__text">
+              La table&nbsp;O2 consiste en une série de retentions de
+              respiration statiques de durée croissante avec un temps de repos
+              fixe entre chaque série.
+            </p>
+            <p class="app__text">
+              La table CO2 étant plus accessible, est destinée dans un premier
+              temps aux débutants, puis la table&nbsp;O2 demandant une pratique
+              un peu plus poussée s'adresse à un publique plus entrainé.
+            </p>
+            <h5 class="h5">Santé et sécurité!</h5>
+            <div class="attention-note">
+              <p class="app__text attention-note_title">ATTENTION!</p>
+              <p class="app__text">
+                Les exercices de rétention de respiration peuvent être dangereux
+                pour la santé, ces derniers pratiqués de manière irraisonnée,
+                risquent de provoquer la perte de conscience, voire la mort.
+              </p>
+              <p class="app__text">
+                Consultez votre médecin sur les contre-indications à la pratique
+                de l'apnée avant de débuter l'entrainement. Toute personne qui
+                pratique l'apnée doit bénéficier d'un suivi médical régulier axé
+                essentiellement sur le système cardiovasculaire et la recherche
+                d'éventuels désordres respiratoires.
+              </p>
+              <p class="app__text">
+                Vous vous entrainez à vos risques et périls. Pratiquer sous la
+                supervision d'un coach ou partenaire expérimenté est vivement
+                conseillé.
+              </p>
+              <p class="app__text">
+                Stopper IMMEDIATEMENT les exercices si vous vous sentez mal
+                Durant l'entrainement.
+              </p>
+              <p class="app__text">
+                L'apnée dynamique, tout comme l'activité physique sont proscrits
+                plusieurs heures après l'entrainement.
+              </p>
+              <p class="app__text">
+                De plus s'entrainer sur plusieurs tables différentes le même
+                jour n'est pas recommandé.
+              </p>
+              <p class="app__text">
+                L'organisme a besoin d'une période de récupération pour revenir
+                à la normale, celle-ci n'est pas à négliger au risque de perdre
+                connaissance.
+              </p>
+              <p class="app__text">
+                Il est INTERDIT d'enchainer plusieurs apnées poussées au maximum
+                à la suite, sous peine de perte de conscience.
+              </p>
+              <p class="app__text">
+                Le programme n'est pas destiné aux enfants, ni à une pratique
+                aquatique de l'apnée.
+              </p>
+            </div>
+            <h5 class="h5">Recommandations</h5>
+            <p class="app__text">
+              Avant l'entrainement vous pouvez plonger votre visage dans de
+              l'eau froide pendant 15&nbsp;secondes, et ne pas vous essuyer cela
+              déclenchera votre diving reflex.
+            </p>
+            <p class="app__text">
+              Vous pouvez même portez votre masque de plongée pour reproduire
+              des conditions proches du réel. Il est recommandé de pratiquer les
+              exercices l'estomac vide, à distance d'au moins 4h du dernier
+              repas.
+            </p>
+            <p class="app__text">
+              Asseyez-vous, débranchez votre téléphone, éteignez la télévision,
+              l'ordinateur, ou tout autre appareil susceptible de vous
+              perturber. Demandez à vos proches de ne pas vous déranger jusqu'à
+              la fin de la session.
+            </p>
+            <p class="app__text">
+              Avant l'entrainement, relaxez-vos muscles, respirez profondément
+              et calmement pendant quelques minutes.
+            </p>
+            <p class="app__text">
+              Essayez de ressentir la chaleur et la lourdeur de l'apesanteur qui
+              colle votre corps au sol.
+            </p>
+            <p class="app__text">
+              Relax, ne pensez à rien, focalisez votre attention sur le rythme
+              de votre respiration.
+            </p>
+            <div class="app__postscriptum">
+              <p class="app__text">
+                <strong>P.&nbsp;S.</strong> Si vous souhaitez que l'application
+                parle votre langue, ou améliorer la traduction, envoyez un
+                email:
+                <a href="mailto:ipictureprint@gmail.com?subject=Question"
+                  >ipictureprint@gmail.com</a
+                >
+              </p>
+              <p class="app__text"></p>
+              <p class="app__text">
+                L'auteur de l'application souhaite remercier Quentin Destremont
+                de Biscarrosse pour la traduction française!
+              </p>
+              <p class="app__text">
+                Si vous êtes satisfait de cette application et souhaitez la
+                développer davantage, n'oubliez pas de donner votre note
+                positive sur
+                <a
+                  href="https://apps.apple.com/fr/app/tables-dapn%C3%A9e/id1116159086"
+                  target="_blank"
+                  ><strong>l'App Store</strong></a
+                >. &#9786; Merci!
+              </p>
+              <p class="app__text">
+                Nous recommandons nos applications dans l'App Store
+                <a
+                  href="https://apps.apple.com/fr/app/pranayama-breathing-yoga-timer/id1268297941"
+                  target="_blank"
+                  ><strong>Pranayama Breathing Yoga Timer</strong></a
+                >
+                et
+                <a
+                  href="https://apps.apple.com/fr/app/evoparameter-workout-diary/id1504206913"
+                  target="_blank"
+                  ><strong>EvoParameter&nbsp;&mdash; Workout Diary</strong></a
+                >.
+              </p>
+            </div>
+          </article>
+          <div class="reviews__wrapper">
+            <h3 class="h3">Avis</h3>
+            <div class="reviews__container">
+              <div class="review__box">
+                <p class="review__date">Apr 22, 2020</p>
+                <p class="review__author">by <span>Julien de Boulogne</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  L'utilisation est intuitive, les entraînements sont soit avec
+                  un réglage automatique très cohérent soit avec un réglage
+                  manuel. Un bon guide pour s'entraîner en apnée à sec!
+                </p>
+              </div>
+              <div class="review__box">
+                <p class="review__date">Sep 4, 2020</p>
+                <p class="review__author">by <span>joseph2ABonifacio</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Très bonne application dommage il manque certaines
+                  fonctionnalités et des programmes d'entraînements qui seraient
+                  vraiment super pour améliorer l'application.
+                </p>
+              </div>
+              <div class="review__box">
+                <p class="review__date">Nov 29, 2021</p>
+                <p class="review__author">by <span>Moiango</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Super appli pour entraînement au sec. Manque une explication
+                  dans l'aide pour l'automatique et le manuellement pour
+                  entraînement O2 et CO2 mais en cherchant un peu… Dommage aussi
+                  que l'on e puisse pas éditer / extraire l'entraînement en
+                  fichier FIT ou Csv… Peut-être prochainement…
+                </p>
+              </div>
+              <div class="review__box">
+                <p class="review__date">Jan 27, 2023</p>
+                <p class="review__author">by <span>Tgmoft</span></p>
+                <i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i
+                ><i class="fa-solid fa-star star_orange"></i>
+                <p class="review__text">
+                  Après une dizaine de jours d'entraînement CO2, amélioration
+                  remarquable des apnées statistiques. L'application souffre de
+                  quelques bugs : elle s'éteint parfois en cours d'entraînement.
+                  Sinon, utilisation très agréable. Je recommande.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content_copyright">
+            Copyright &copy; Aleh Rabchuk 2024 Tous droits réservés
+            &VerticalLine; Ce site Web est réalisé avec
+            <i class="fa-solid fa-heart"></i> par
+            <a href="mailto:lapuschinskaja@mail.ru">Natallya Lapushynskaya</a>
+          </div>
+          <div class="footer__content_privacy">
+            <a href="privacy-fr.html"
+              >POLITIQUE DE&nbsp;CONFI&shy;DEN&shy;TIALITÉ</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
