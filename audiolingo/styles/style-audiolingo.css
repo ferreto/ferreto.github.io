@@ -144,14 +144,14 @@ p {
   gap: 32px;
 }
 
-.header__nav a {
+.header__nav a:not(.header__cta) {
   font-size: 0.875rem;
   font-weight: 500;
   color: #64748b;
   transition: color 0.2s ease;
 }
 
-.header__nav a:hover {
+.header__nav a:not(.header__cta):hover {
   color: #0a1628;
 }
 
@@ -782,7 +782,7 @@ p {
     display: flex;
   }
 
-  .header__nav a {
+  .header__nav a:not(.header__cta) {
     font-size: 1.25rem;
     font-weight: 600;
     color: #0a1628;
