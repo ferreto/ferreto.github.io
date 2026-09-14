@@ -15,6 +15,7 @@
     <meta property="og:title" content="AudioLingo вЂ” Language Shadowing for Speaking Practice" />
     <meta property="og:description" content="Learn languages through shadowing. Listen to natural speech, repeat it aloud, and improve your listening, pronunciation, and speaking with AudioLingo." />
     <meta property="og:site_name" content="AudioLingo" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="https://apneaapps.top/images/logos/audiolingo-og.png" />
 
     <!-- Twitter Card -->
@@ -37,7 +38,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style-audiolingo.css" />
@@ -64,6 +65,11 @@
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5"
           }
         }
       ]
@@ -151,7 +157,7 @@
           <a href="#how-it-works">How It Works</a>
           <a href="#benefits">Benefits</a>
           <a href="#faq">FAQ</a>
-          <a href="https://apps.apple.com/us/app/audiolingo-language-shadowing/id6759068633" class="header__cta" target="_blank" rel="noopener">
+          <a href="https://apps.apple.com/app/id6759068633" class="header__cta" target="_blank" rel="noopener">
             <img src="../images/app-store-apple-f1f919205b.svg" alt="Download on the App Store" width="20" height="24" />
             Download
           </a>
@@ -173,7 +179,7 @@
           <p class="hero__subtitle">
             Listen to natural speech. Repeat it aloud. Improve your listening, pronunciation, and speaking skills with the shadowing method.
           </p>
-          <a href="https://apps.apple.com/us/app/audiolingo-language-shadowing/id6759068633" class="hero__cta" id="hero-cta" target="_blank" rel="noopener">
+          <a href="https://apps.apple.com/app/id6759068633" class="hero__cta" id="hero-cta" target="_blank" rel="noopener">
             <img src="../images/app-store-apple-f1f919205b.svg" alt="Download on the App Store" width="20" height="24" />
             Download on the App Store
           </a>
@@ -394,8 +400,8 @@
             <h2>Frequently Asked Questions</h2>
           </div>
           <div class="faq">
-            <div class="faq__item active">
-              <button class="faq__question">
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
                 What is language shadowing?
                 <span class="faq__icon">+</span>
               </button>
@@ -406,7 +412,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 How does language shadowing help you learn a language?
                 <span class="faq__icon">+</span>
               </button>
@@ -417,7 +423,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 How do I practice language shadowing?
                 <span class="faq__icon">+</span>
               </button>
@@ -428,7 +434,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 What is the best way to improve pronunciation in a foreign language?
                 <span class="faq__icon">+</span>
               </button>
@@ -439,7 +445,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Can AudioLingo help with speaking practice?
                 <span class="faq__icon">+</span>
               </button>
@@ -450,7 +456,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Is AudioLingo for English only?
                 <span class="faq__icon">+</span>
               </button>
@@ -461,7 +467,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Can beginners use language shadowing?
                 <span class="faq__icon">+</span>
               </button>
@@ -472,7 +478,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 What is the difference between shadowing and simply listening?
                 <span class="faq__icon">+</span>
               </button>
@@ -494,7 +500,7 @@
             Download AudioLingo and start practicing with natural speech today.
           </p>
           <div class="final-cta__buttons">
-            <a href="https://apps.apple.com/us/app/audiolingo-language-shadowing/id6759068633" class="final-cta__appstore" id="final-cta-appstore" target="_blank" rel="noopener">
+            <a href="https://apps.apple.com/app/id6759068633" class="final-cta__appstore" id="final-cta-appstore" target="_blank" rel="noopener">
               <img src="../images/app-store-apple-f1f919205b.svg" alt="Download on the App Store" width="20" height="24" />
               Download on the App Store
             </a>
@@ -555,9 +561,11 @@
               var isActive = item.classList.contains('active');
               for (var j = 0; j < items.length; j++) {
                 items[j].classList.remove('active');
+                items[j].querySelector('.faq__question').setAttribute('aria-expanded', 'false');
               }
               if (!isActive) {
                 item.classList.add('active');
+                item.querySelector('.faq__question').setAttribute('aria-expanded', 'true');
               }
             };
           })(items[i]));

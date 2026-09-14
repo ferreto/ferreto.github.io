@@ -311,6 +311,7 @@ p {
 
 .hero__phone {
   width: 280px;
+  height: 560px;
   aspect-ratio: 1320 / 2868;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -471,6 +472,7 @@ p {
 .screenshots__item {
   flex: 0 0 auto;
   width: 240px;
+  height: 525px;
   aspect-ratio: 1284 / 2778;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);

@@ -15,6 +15,7 @@
     <meta property="og:title" content="AudioLingo — шедоуинг для практики разговорной речи" />
     <meta property="og:description" content="Изучайте языки с помощью шедоуинга. Слушайте речь носителей, повторяйте вслух и улучшайте восприятие на слух, произношение и навыки говорения с AudioLingo." />
     <meta property="og:site_name" content="AudioLingo" />
+    <meta property="og:locale" content="ru_RU" />
     <meta property="og:image" content="https://apneaapps.top/images/logos/audiolingo-og.png" />
 
     <!-- Twitter Card -->
@@ -37,7 +38,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style-audiolingo.css" />
@@ -50,7 +51,7 @@
         {
           "@type": "WebSite",
           "name": "AudioLingo",
-          "url": "https://apneaapps.top/audiolingo/",
+          "url": "https://apneaapps.top/audiolingo/index-ru.html",
           "description": "AudioLingo — приложение для шедоуинга, которое помогает развивать восприятие речи на слух, произношение и навыки говорения с помощью слушания и повторения речи носителей языка."
         },
         {
@@ -58,12 +59,17 @@
           "name": "AudioLingo",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationApplication",
-          "url": "https://apneaapps.top/audiolingo/",
+          "url": "https://apneaapps.top/audiolingo/index-ru.html",
           "description": "Приложение для шедоуинга — изучение языков через слушание и повторение речи носителей. Практикуйте восприятие на слух, произношение и говорение.",
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5"
           }
         }
       ]
@@ -151,7 +157,7 @@
           <a href="#how-it-works">Как это работает</a>
           <a href="#benefits">Преимущества</a>
           <a href="#faq">Вопросы и ответы</a>
-          <a href="https://apps.apple.com/ru/app/audiolingo-workaudiobook/id6759068633" class="header__cta" target="_blank" rel="noopener">
+          <a href="https://apps.apple.com/app/id6759068633" class="header__cta" target="_blank" rel="noopener">
             <img src="../images/app-store-apple-f1f919205b.svg" alt="Скачать в App Store" width="20" height="24" />
             Скачать
           </a>
@@ -173,7 +179,7 @@
           <p class="hero__subtitle">
             Слушайте речь носителей языка. Повторяйте вслух. Улучшайте восприятие речи на слух, произношение и навыки говорения с помощью метода шедоуинга.
           </p>
-          <a href="https://apps.apple.com/ru/app/audiolingo-workaudiobook/id6759068633" class="hero__cta" id="hero-cta" target="_blank" rel="noopener">
+          <a href="https://apps.apple.com/app/id6759068633" class="hero__cta" id="hero-cta" target="_blank" rel="noopener">
             <img src="../images/app-store-apple-f1f919205b.svg" alt="Скачать в App Store" width="20" height="24" />
             Скачать в App Store
           </a>
@@ -394,8 +400,8 @@
             <h2>Часто задаваемые вопросы</h2>
           </div>
           <div class="faq">
-            <div class="faq__item active">
-              <button class="faq__question">
+            <div class="faq__item">
+              <button class="faq__question" aria-expanded="false">
                 Что такое шедоуинг?
                 <span class="faq__icon">+</span>
               </button>
@@ -406,7 +412,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Как шедоуинг помогает изучать языки?
                 <span class="faq__icon">+</span>
               </button>
@@ -417,7 +423,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Как практиковать шедоуинг?
                 <span class="faq__icon">+</span>
               </button>
@@ -428,7 +434,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Как лучше всего улучшить произношение на иностранном языке?
                 <span class="faq__icon">+</span>
               </button>
@@ -439,7 +445,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Может ли AudioLingo помочь с практикой говорения?
                 <span class="faq__icon">+</span>
               </button>
@@ -450,7 +456,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 AudioLingo только для английского языка?
                 <span class="faq__icon">+</span>
               </button>
@@ -461,7 +467,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Могут ли новички использовать шедоуинг?
                 <span class="faq__icon">+</span>
               </button>
@@ -472,7 +478,7 @@
               </div>
             </div>
             <div class="faq__item">
-              <button class="faq__question">
+              <button class="faq__question" aria-expanded="false">
                 Чем шедоуинг отличается от обычного слушания?
                 <span class="faq__icon">+</span>
               </button>
@@ -494,7 +500,7 @@
             Скачайте AudioLingo и начните практиковаться с речью носителей уже сегодня.
           </p>
           <div class="final-cta__buttons">
-            <a href="https://apps.apple.com/ru/app/audiolingo-workaudiobook/id6759068633" class="final-cta__appstore" id="final-cta-appstore" target="_blank" rel="noopener">
+            <a href="https://apps.apple.com/app/id6759068633" class="final-cta__appstore" id="final-cta-appstore" target="_blank" rel="noopener">
               <img src="../images/app-store-apple-f1f919205b.svg" alt="Скачать в App Store" width="20" height="24" />
               Скачать в App Store
             </a>
@@ -555,9 +561,11 @@
               var isActive = item.classList.contains('active');
               for (var j = 0; j < items.length; j++) {
                 items[j].classList.remove('active');
+                items[j].querySelector('.faq__question').setAttribute('aria-expanded', 'false');
               }
               if (!isActive) {
                 item.classList.add('active');
+                item.querySelector('.faq__question').setAttribute('aria-expanded', 'true');
               }
             };
           })(items[i]));
