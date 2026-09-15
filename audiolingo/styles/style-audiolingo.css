@@ -15,6 +15,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -221,7 +222,7 @@ p {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 800px;
+  width: min(800px, 100vw);
   height: 500px;
   background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0.04) 40%, transparent 70%);
   pointer-events: none;
@@ -472,7 +473,6 @@ p {
 .screenshots__item {
   flex: 0 0 auto;
   width: 240px;
-  height: 525px;
   aspect-ratio: 1284 / 2778;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -697,7 +697,7 @@ p {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
+  width: min(600px, 100vw);
   height: 400px;
   background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
   pointer-events: none;
